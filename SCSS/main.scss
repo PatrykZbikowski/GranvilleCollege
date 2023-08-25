@@ -1,0 +1,34 @@
+@import "frequentColours";
+@import "programs";
+@import "header";
+@import "formHeader";
+@import "form";
+@import "welcome";
+@import "hamburger";
+@import "about";
+@import "getInfoNow";
+@import "financial";
+@import "personalityAssess";
+@import "getStarted";
+@import "faq";
+@import "ourCampus";
+@import "footer";
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $frequentFont;
+}
+
+.content_width{
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,26 @@
+@import "frequentColours";
+
+.finacial_aid{
+    color: $frequentGray;
+    display: flex;
+    position: relative;
+    background-color: white;
+    padding: 40px 20px 0px 20px;
+
+    span{
+        font-weight: bold;
+    }
+
+    .title{
+        font-size: larger;
+        width: 100%;
+
+        span{
+            color: $frequentGreen;
+        }
+    }
+
+    @media (max-width: 738px) {
+        flex-wrap: wrap;
+    }
+}

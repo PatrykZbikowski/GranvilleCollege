@@ -1,0 +1,59 @@
+@import "frequentColours";
+
+.personality_assessment{
+    color: white;
+    background-image: url("/granvile-assetss/personality-assessment.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    @media(max-width: 1260px) {
+
+        padding: 0px 20px 0px 20px;
+    }
+    .content{
+        flex-grow: 1;
+        .content_top{
+
+            width: 100%;
+
+            .title{
+ 
+                font-size: large;
+                width: 100%;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+            p{
+                width: 100%;
+            }
+        }
+    }
+    
+    .take_asses_button{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 24px;
+        .button{
+            background-color: $frequentGreen;
+            color: white;
+            font-weight: bold;
+            padding: 12px 32px;
+            text-align: center;
+            text-decoration: none;     
+            cursor: pointer;
+            white-space: nowrap;
+            border-radius: 5px;
+            font-size: 20px;
+            border: 1px solid white;
+    
+            &:hover{
+                background-color: white;
+                color: $frequentGreen;
+                transition: 0.3s;
+            }
+        }
+    }
+}

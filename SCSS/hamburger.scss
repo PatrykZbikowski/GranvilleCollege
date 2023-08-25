@@ -1,0 +1,105 @@
+@import "frequentColours";
+
+.nav{
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    transition: margin-left 0.5s;
+    
+    @media (max-width: 980px) {
+        display: none;
+    }
+    @media (min-width: 980px){
+        padding-right: 20px;
+    }
+
+    .title{
+        display: flex;
+        position: relative;
+        right: 20px;
+        font-size: larger;
+        color: white;
+    }
+    
+    .hamburger {
+        display: flex;
+        position: relative;
+        background-color: $frequentBlack;
+        justify-content: flex-end;
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+
+        .bar {
+        position: absolute;
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 10%;
+        }
+        .bar1{
+        position: absolute;
+        justify-content: right;
+        width: 80%;
+        }
+        
+        .bar3 {
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        }
+        .bar2 {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        }
+
+        @media (max-width: 980px){
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            background-color: $frequentGreen;
+            padding-right: 20px;
+        } 
+          
+    }
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color:$frequentBlack;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        box-sizing: border-box;
+
+        a {
+            padding: 8px 8px 12px 32px;
+            text-decoration: none;
+            color: white;
+            display: block;
+            transition: 0.4s;
+            font-size: 15px;
+
+            &:hover{
+                color: $frequentOrange;
+            }
+        }
+
+        .closeBtn{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 5px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+@import "frequentColours";
+
+.programs {
+    display: flex;
+    position: relative;
+    background-color: $frequentGreen;
+    width: 100%;
+    color: white;
+    padding: 60px 0px;
+
+    @media (max-width: 1260px) {
+        padding: 40px 20px;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        span {
+            font-weight: bold;
+            font-size: large;
+        }
+    }
+    .program_text {
+        font-weight: bold;
+    }
+
+    .program_container {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px 0px;
+        width: 100%;
+        color: $frequentBlack;
+
+        .program {
+            display: flex;
+            width: 48%;
+            position: relative;
+            padding: 30px;
+            background-color: white;
+            flex-wrap: wrap;
+
+            @media (max-width: 738px) {
+                width: 100%;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 175px;
+                height: 40px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+
+                @media (max-width: 1192px) {
+                    transform: translateY(0);
+                    top: 20px;
+                }
+            }
+
+            &--business::before {
+                background: url("/granvile-assetss/icons/business-ico.png") no-repeat;
+            }
+
+            &--hospitality::before {
+                background: url("/granvile-assetss/icons/hospitality-ico.png") no-repeat;
+            }
+
+            &--healthcare::before {
+                background: url("/granvile-assetss/icons/healthcare-ico.png") no-repeat;
+            }
+
+            &--veterinary::before {
+                background: url("/granvile-assetss/icons/veterinary-ico.png") no-repeat;
+            }
+
+            .program_major {
+                display: flex;
+                width: 33%;
+                flex-grow: 1;
+                justify-content: flex-start;
+                left: 50px;
+                align-items: center;
+                font-weight: bold;
+                position: relative;
+                color: $frequentGray;
+            }
+
+            .program_programs {
+                display: flex;
+                position: relative;
+                align-items: center;
+                height: 100%;
+                width: 67%;
+                flex-grow: 1;
+
+                ul {
+                    li {
+                        list-style: none;
+                        padding: 3px 0px;
+                        a {
+                            font-weight: bold;
+                            font-size: 14px;
+                            color: $frequentGray;
+                        }
+                        a:hover {
+                            color: $frequentOrange;
+                        }
+                    }
+                }
+            }
+            @media (max-width: 1192px) {
+                .program_major {
+                    width: 100%;
+                  right: auto;
+                }
+                .program_programs {
+                    width: 100%;
+                }
+                
+            }
+        }
+    }
+}

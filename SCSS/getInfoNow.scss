@@ -1,0 +1,36 @@
+@import "frequentColours";
+
+.get_info_now{
+    display: block;
+    position: relative;
+    justify-content: center;
+    background: white;
+    height: 100px;
+
+    .button{
+        position: absolute;
+        display: flex;
+        background-color: $frequentGreen;
+        color: white;
+        font-weight: bold;
+        padding: 12px 32px;
+        text-align: center;
+        text-decoration: none;     
+        cursor: pointer;
+        top: 45%;
+        justify-content: center;
+        //put button in center of screen
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        font-size: 20px;
+        border: 1px solid $frequentOrange;
+        transition: 0.3s;
+
+        &:hover{
+            background-color: white;
+            color: $frequentOrange;
+            transition: 0.3s;
+        }
+    }
+}

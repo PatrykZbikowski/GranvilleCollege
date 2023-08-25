@@ -1,0 +1,111 @@
+@import "frequentColours";
+@import "hamburger";
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: $frequentBlack;
+    font-size: small;
+    height: 40px;
+
+    @media (max-width: 980px) {
+        background-color: $frequentGreen;
+        height: 100px;
+
+    }
+    @media (max-width: 500px) {
+        background-color: $frequentGreen;
+        height: 100px;
+    }
+
+    .take_assess{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 100px;
+        flex-grow: 1;
+
+        @media (max-width: 980px) {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+            background-color: $frequentGreen;
+
+            .take_assess{
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+    
+            .nav{
+                
+                .title{
+                    display: none;
+                }
+               .hamburger{
+                    color: white;
+               }
+            }
+        }
+        @media (max-width: 1470px) {
+            padding: 0px 20px 0px 20px;
+            
+        }
+
+        .text_1{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            font-size: larger;
+            color: white;
+
+            @media (max-width: 980px){
+                top: 10%;
+            }
+        }
+    
+        .button{
+            display: flex;
+            position: relative;
+            background-color: $frequentOrange;
+            color: $frequentBlack;
+            font-weight: bold;
+            height: 100%;
+            width: 30%;
+            left: 50%;
+            white-space: nowrap;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;     
+            cursor: pointer;
+
+            @media (max-width: 980px){
+                position: relative;
+                width: 150px;
+                height: 30px;
+                top: 25%;
+                left: 0;
+
+            }
+
+            &:hover{
+                background-color: $frequentGreen;
+                transition: 0.3s;
+                color: white;
+
+                @media (max-width: 980px){
+                    background-color: $frequentBlack;
+                }
+            }
+        }
+    }
+    
+    
+}

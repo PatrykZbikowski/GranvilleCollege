@@ -1,0 +1,98 @@
+@import "frequentColours";
+
+.FAQ{
+    display: flex;
+    position: relative;
+    width: 100%;
+    
+    padding: 20px 0px 20px 0px;
+    color: $frequentGray;
+    background-color: #f9f9f9;
+    flex-grow: 1;
+
+    p{
+        font-size: larger;
+        padding-bottom: 20px;
+
+        @media (max-width:  1257px) {
+            padding: 0px 20px 0px 20px;
+        }
+
+        span{
+            color: $frequentGreen;
+            font-weight: bold;
+            text-indent: 0.4em;
+        }
+    }
+
+    .blocks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        flex-grow: 1;
+        padding: 20px 0px 20px 0px;
+        color: $frequentOrange;
+        grid-gap: 20px;
+        width: 100%;
+        flex-wrap: wrap;        
+
+        @media (max-width:  785px) {
+            display: flex;
+            grid-template-columns: 1fr 1fr;
+            padding: 30px 20px 0px 20px; 
+        }
+
+
+        .faq_item{
+            width: 100%;
+
+            @media (min-width:  980px) {
+                font-size: smaller;
+            }
+
+            .faq_button {
+                display: block;
+                position: relative;
+                font-size: 18px;
+                color: $frequentGray;
+                padding: 10px 20px 10px 20px;
+                background-color: white;
+                width: 100%;
+                text-align: left;
+                cursor: pointer;
+
+                @media (max-width:  785px) {
+                    
+                }
+
+                &:hover {
+                  color: $frequentOrange;
+                }
+                
+                &.active {
+                    //add a transition so the content will slide down smoothly
+                    transition: max-height 0.3s ease-in;
+                    max-height: 200px;
+                    
+                }
+            }
+
+            .content {
+                display: none;
+                padding: 10px 20px 10px 20px;
+                overflow: hidden;
+                position: relative;
+                flex-wrap: wrap;
+                background-color: white;
+    
+                p{
+                    display: flex;
+                    justify-content: flex-start;
+                    color: $frequentBlack;
+                    font-size: 15px;
+                    padding: 10px 0px 10px 0px;
+                }
+            }
+        } 
+    }
+}

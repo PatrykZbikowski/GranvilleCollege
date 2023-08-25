@@ -1,0 +1,148 @@
+@import "frequentColours";
+
+.welcome{
+    display: flex;
+    position: relative;
+    color: $frequentGray;
+    background-color: white;
+    height: auto;
+
+    @media (max-width: 1260px) {
+        flex-wrap: wrap;
+        padding: 0px 20px;
+    }
+
+    .top_welcome_section{
+        
+        .school_to_trust{
+            font-weight: 600;
+        }
+        
+        h1{
+            font-weight: 400;
+        }
+        span{
+            color: $frequentGreen;
+            font-weight: bold;
+        }
+    }
+    
+    .welcome_blocks{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        @media (max-width: 940px) {
+            flex-flow: column wrap;
+        }
+        @media (max-width: 400px) {
+            font-size: smaller;
+        }
+
+        .our_team_block{
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f5f5f5;
+            width: 50%;     
+            padding: 20px 10px;
+            flex-grow: 1;
+
+            @media (max-width: 980px) {
+                width: 100%; 
+            }
+
+            span{
+                color: $frequentGreen;
+                font-weight: 600;
+                
+            }
+            p{
+                text-align: center;
+                font-weight: 600;
+                font-size: medium;
+                padding-top: 20px;
+            }
+        }
+        .granville_difference_block{
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #ececec;
+            width: 50%;
+            padding: 20px 10px;
+            flex-grow: 1;
+            
+
+            @media (max-width: 980px) {
+                width: 100%;
+            }
+
+            @media (max-width: 1108px){
+                p{
+                    padding-top: 20px;
+                }
+                
+            }
+ 
+            span{
+                color: $frequentGreen;
+                font-weight: 600;
+            }
+            p{
+                text-align: center;
+                font-weight: 600;
+                font-size: medium;
+                
+            }
+        }
+    }
+    
+    .why_study_list{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 20px 0px;
+        
+
+        h1{
+            font-weight: 400;
+        }
+        span{
+            color: $frequentGreen;
+            font-weight:bold;
+            
+        }
+
+        ul{
+            list-style: none;
+            list-style-position: inside;
+            text-indent: 3em;
+            
+            @media (max-width: 500px) {
+                text-indent: 3em;
+                height: 100%;
+            }
+
+            li{
+                position: relative;
+                padding: 5px 0px;
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    background: url("/granvile-assetss/icons/bullet.png");
+                    background-size: contain;
+                    height: 16px;
+                    width: 16px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}

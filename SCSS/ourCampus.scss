@@ -1,0 +1,56 @@
+    @import "frequentColours";
+
+.our_campus{
+    color: $frequentGray;
+    display: flex;
+    height: 300px;
+    position: relative;
+    background-color: white;
+    
+    .title{
+        display: flex;
+        align-items: center;
+        font-size: larger;
+        width: 100%;
+
+        span{
+            color: $frequentGreen;
+            font-weight: bold;
+            padding: 5px;
+        }
+    }
+
+    .address{
+        font-weight: bold;
+        transform: translateY(-25%);
+    }
+
+    .button{
+        position: absolute;
+        display: flex;
+        background-color: $frequentOrange;
+        color: white;
+        font-weight: bold;
+        padding: 12px 50px;
+        text-align: center;
+        text-decoration: none; 
+        white-space: nowrap;    
+        cursor: pointer;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        font-size: 20px;
+        border: 1px solid $frequentOrange;
+
+        &:hover{
+            color: $frequentOrange;
+            background-color: white;
+            transition: 0.3s;
+        }
+    }
+    
+    @media (max-width: 1240px) {
+        padding: 0px 20px 0px 20px;
+    }
+}

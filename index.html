@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="../granvile-assetss/favicon.png" />
+    <script type="module" src="/main.js" defer></script>
+    <script type="module" src="/hamburger.js" defer></script>
+    <script type="module" src="/faq.js" defer></script>
+    <script type="module" src="/testimonials.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granville College</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="content_width">
+      <div class="take_assess">
+        <p class="text_1">Do You Have the Right Personality for College?</p>
+        <a href="#take_assessment" class="button">Take the Assessment!</a>
+      </div>
+      <div class="nav">
+        <span class="title">Programs</span>
+        <button class="hamburger" onclick="openBtn()">
+          <span class="bar1 bar"></span>
+          <span class="bar2 bar"></span>
+          <span class="bar3 bar"></span>
+        </button>
+        <div class="sidebar">
+          <a class="closeBtn" onclick="closeBtn()">&times;</a>
+          <a href="#business">Business</a>
+          <a href="#healthcare">Healthcare</a>
+          <a href="#hospitality">Hospitality</a>
+          <a href="#vetrinary">Vetrinary</a>
+        </div>
+      </div>  
+    </div></header>
+
+    <section class="form_header">
+      <div class="content_width">
+        <div class="first_person_image">
+          <div class="transparent_form_banner"><div class="content_width">
+            <div class="nav">
+              <span class="title">Programs</span>
+              <button class="hamburger" onclick="openBtn()">
+                <span class="bar1 bar"></span>
+                <span class="bar2 bar"></span>
+                <span class="bar3 bar"></span>
+              </button>
+              <div class="sidebar">
+                <a class="closeBtn" onclick="closeBtn()">&times;</a>
+                <a href="#business">Business</a>
+                <a href="#healthcare">Healthcare</a>
+                <a href="#hospitality">Hospitality</a>
+                <a href="#vetrinary">Vetrinary</a>
+              </div>
+            </div>
+            </div>
+            <img class="green_logo" src="/granvile-assetss/logo.png" alt="green_logo">
+            <img class="white_logo" src="/granvile-assetss/icons/logo-white.png" alt="white_logo">  
+          </div>
+          <div class="green_form_banner"><div class="content_width">
+            <div class="banner_text">
+              <h2>Specialized <span class="green_banner_boldtext">Diploma and Training</span></h2>
+              <p>Succeed in the career path you choose!</p>  
+            </div>
+          </div></div>
+        </div>
+      </div>
+        <div class="form">
+          <div class="form_info">
+            <h3>Get More Info <span>Now!!!</span></h3>
+            <p>Fill out the form below to get all your answers by email!</p>
+            <ul>
+              <li>Can I get finacial aid?</li>
+              <li>Can I book a campus tour?</li>
+            </ul>
+            <ul>
+              <li>Will I get accepted?</li>
+              <li>When does it start?</li>
+            </ul>
+          </div>
+          <div class="form_input">
+            <form method="post" action="/submit">
+              <div class="select_box">
+                <select name="program" aria-label="select program" required>
+                  <option value="" selected="selected" disabled=""> Select Program</option>
+                  <option value="business">Business Administration Diploma</option>
+                  <option value="business">Business Administration / Global Supply Chain Management Specialty</option>
+                  <option value="business">Global Supply Chain Management Diploma</option>
+                  <option value="business">Human Resources Management Diploma</option>
+                  <option value="hospitality">Hospitality Management Program with Co-Op</option>
+                  <option value="hospitality">Hospitality Management Program without Co-Op</option>
+                  <option value="healthcare">HealthCare Office Administration Diploma</option>
+                  <option value="veterinary">Veterinary Technician Assistant</option>
+                </select>
+                <span></span>
+              </div>
+
+              <div class="input_row">
+                <div class="input_box">
+                  <input type="text" name="fname" data-name="fname" placeholder="First Name" required>
+                  <span></span>
+                  
+                </div>
+                <div class="input_box">
+                  <input type="text" name="lname" data-name="lname" placeholder="Last Name" required>
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="email_box">
+                <input type="email" name="email"  data-name="email" placeholder="Email" required>
+                <span></span>
+              </div>
+
+              <div class="input_row">
+                <div class="input_box">
+                  <input type="tel" name="phone" data-name="phone" placeholder="Phone" required>
+                  <span></span>
+                  
+                </div>
+                <div class="input_box">
+                  <input type="postal" name="postalCode" data-name="postal" placeholder="postal" required>
+                  <span></span>
+                </div>
+              </div>
+
+              <button>
+                <a href="#take_assessment" class="button">Get Info Now!</a>
+              </button>
+
+              <div class="form_bottom">
+                <p class="form_opt">
+                  Please send me more information right away using my information above! 
+                  I may opt-out of electronic communication at anytime.
+                  <a href="#read_terms">read terms</a>
+                </p>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome"><div class="content_width">
+      <div class="top_welcome_section">
+        <br><h1>Welcome to <span>Granville College</span></h1>
+      <br><p class="school_to_trust">A School You Can Trust</p>
+      <br><p>Grandville College is registered and designed by the 
+          Private Training Institutiobs Branch (PTIB) of British Columbia.
+      </p>
+      <br><br><p>Through the process, the institution and its Diploma Program are evaluated
+        and recognized for quality assurance and, if successful, the institution is
+        awarded a designation certificate. As a result, students can be confident that
+        an institution and its educational Diploma Program meet criteria and standards
+        established by the PTIB college designation standards.
+      </p><br>
+      </div>
+
+      <div class="welcome_blocks">
+        <div class="our_team_block">
+          <h1><span class="color1-text">Our Team</span></h1>
+            <p>The Team at Granville college is enthusiastic about helping
+                individuals pursue rewarding careers. Book a tour to come visit
+                us in person - we would love to see you!
+            </p>
+        </div>
+        <div class="granville_difference_block">
+          <h1><span class="color1-text">The Granville Difference</span></h1>
+            <p>Since 1982, we have been a supportive community of like-minded
+                individuals, all passionate about the health and well-being of animals.
+            </p>
+        </div>
+      </div>
+      
+      <div class="why_study_list">
+        <h1>Why Study at <span class="color1-text">Granville College</span></h1><br>
+        <ul>
+          <li>The First Veterinary Technican Assistant College in Canada</li>
+          <li>#pioneeringsuccess</li>
+          <li>Specialized Diploma and Training Programs</li>
+          <li>Campus located in the Heart of Vancouver</li>
+          <li>Career Services - Job Placement Assistance</li>
+          <li>Affordable tuition fees</li>
+          <li>Scholarships</li>
+          <li>Personalized Learning</li><br><br>
+        </ul>
+      </div>
+
+    </div></section>
+    
+    <section class="programs">
+      <div class="content_width">
+          <p class="programs__title">Our <span class="program_text">Programs</span></p>
+          <div class="program_container">
+              <div class="program program--business">
+                  <div class="program_major">
+                      <p>Business:</p>
+                  </div>
+                  <div class="program_programs">
+                      <ul>
+                      <li><a href="#business_link1">Business Administration Diploma</a></li>
+                      <li><a href="#business_link2">Business Administration / Global Supply Chain Management Specialty</a></li>
+                      <li><a href="#business_link3">Global Supply Chain Management Diploma</a></li>
+                      <li><a href="#business_link4">Human Resources Management Diploma</a></li>
+                      </ul>
+                  </div>            
+              </div>
+              <div class="program program--healthcare">
+                  <div class="program_major">
+                      <p>Healthcare:</p>
+                  </div>
+                  <div class="program_programs">
+                      <ul>
+                          <li><a href="#healthcare_link1">Healthcare Office Administration Diploma</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="program program--hospitality">
+                  <div class="program_major">
+                      <p>Hospitality:</p>
+                  </div>
+                  <div class="program_programs">
+                      <ul>
+                      <li><a href="#hospitality_link1">Hospitality Management Program with Co-Op</a></li>
+                      <li> <a href="#hospitality_link2">Hospitality Management Program without Co-Op</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="program program--veterinary">
+                  <div class="program_major">
+                      <p>Vetrinary:</p>
+                  </div>
+                  <div class="program_programs">
+                      <ul>
+                      <li><a href="#vetrinary_link1">Veterinary Technician Assistant</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    
+  <section class="about_us">
+    <div class="content_width">
+      <p class="about_us__title">What Our Students <span>Say About Us:</span></p>
+      <div class="comments">
+        <div class="student_comment" id="comment1">
+          Highly recommend Roman as the go-to advisor for getting advice as well 
+          as getting funding. Very knowledgeable and caring individual. Much respect.
+          <br><br><span>Magdalena Leveque</span>
+        </div>
+        <div class="student_comment" id="comment2" style="display: none;">
+          Shot out to Mr Roman Ansari for giving me guidance and support. 
+          I look forward to starting a new career with the advice. Thank you again for all your help.
+          <br><br><span>Sally Banerjee</span>
+        </div>
+        <div class="student_comment" id="comment3" style="display: none;">
+          Granville college has been a wonderful experience. Mandy has never failed to 
+          make my learning experience here fun and cheerful. The amount of information you will 
+          receive while in this program in this 6 month long diploma program is astonishing! If 
+          you're ever considering taking a VA course I would 10/10 recommend this one!
+          <br><br><span>Amanda Fike</span>
+        </div>
+        <div class="student_comment" id="comment4" style="display: none;">
+          This a great college with realistic goals and expectations for become a good professional in the veterinary field.
+          <br><br><span>Monica Alejandra Urbina Caceres</span>
+        </div>
+        <div class="student_comment" id="comment5" style="display: none;">
+          Roman is doing an amazing job helping many international students find helpful 
+          practical solutions as director of admissions for Granville College
+          <br><br><span>Marc Dani</span>
+        </div>
+        <div class="arrow_container">
+          <img src="/granvile-assetss/icons/arrow.png" alt="forward_arrow" class="back_arrow" onclick="showNextComment()">
+          <img src="/granvile-assetss/icons/arrow.png" alt="back_arrow" class="forward_arrow" onclick="showPreviousComment()">
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section class="get_info_now"><div class="content_width">
+    <button>
+      <a href="#take_assessment" class="button">Get Info Now!</a>
+    </button>
+      
+  </div></section>
+
+  <section class="finacial_aid"><div class="content_width">
+    
+    <br><p class="title">Financial <span>Aid</span></p><br><br>
+    <p>Finding yourself in a position where College is unaffordable is more common then
+        most of us realize. Fortunately, Canada's provincial and federal governments are
+        very focused on making education accessible to virtually everyone; even students
+        that are new to Canada. Regardless of your situation: didn't finish high school,
+        are having (or had) financial difficulties, or you are a new arrival to Canada,  
+        <span>we will find a financial solution best for you!</span><br><br>
+        Our Financial Aid Expert will provide you with best options to make education investment in yourself, both realistic and affordable. Let us help you find
+        option that suits you best. <span>Fill out the form NOW!</span><br><br>
+    </p>
+    <p><span>GOVERNMENT STUDENT LOANS</span><br>
+        Currently, British Columbia has a government-sponsored plan that provides loan assistance to qualified full-time students. The type and amount of
+        assistance usually varies depending on your individual circumstances.<br><br>
+        When you meet with our Student Financial Planning Expert at the campus, we will go over all the financial options available to you to make this
+        amazing investment in yourself both affordable and realistic.
+    </p><br>
+    <p><span>RRBC ROYAL CREDIT LINE FOR STUDENTS ©</span><br>
+      The Royal Credit Line for Students lets you <span>focus on what's important:</span> your studies. Available to full-time and part-time students who need to finance
+      their studies, it allows you to take charge of your financial needs in a way that fits your lifestyle.<br><br>
+      The Royal Credit Line for Students is different from a traditional loan in that it lets you borrow funds <span>as you need them</span>, and pay the interest on only
+      the amount you use. without ever having to reapply. You get all the convenience and benefits with <span>no annual fee.</span><br><br>
+      As a student, you may qualify for one of RBCs best rates Prime 1%, which applies when you are at school and for a 12 month grace period after graduation.<br><br>
+      Further information about financial assistance is available from the Financial Advisor at your nearest campus.<br><br>
+    </p>
+    <p><span>OTHER FINANCIAL ASSISTANCE</span><br>
+      There may be other forms of financial aid available to you, Depending on your circumstances, you may be eligible for <span>specific government grants and
+      bursaries</span>, Additionally, you may be eligible to <span>receive funding through a agency </span>such as HRSDC or WorkSafe.<br><br>
+      If you have questions about funding your education, each CDI College campus has a Financial Advisor who can provide information about the various
+      options available to you. Additionally, your <span>Financial Advisor </span>will also assist you with completing your application for whichever funding option you
+      choose.<br><br>
+      Obtaining financial aid Will enable you to concentrate on your CDI College training so you can embark on a rewarding career in your field.<br><br><br>
+    </p>
+
+  </div></section>
+
+  <section class="personality_assessment"><div class="content_width">
+    <div class="content">
+      <div class="content_top">
+        <h1 class="title">Personality <span>Assessment</span></h2>
+          <p>Find out what your personality is like and discover your traits, worries & concerns about taking the next step to study at school towards a new and
+            and what you might need to watch out for rewarding career. This quick and easy assessment will provide you with some insight into what to focus
+            to best prepare you for your new career and school goals!
+          </p>
+      </div>
+      <div class="take_asses_button">
+        <a href="#take_assessment" class="button">Take Assessment!</a>
+      </div>
+      
+    </div>
+  </div>
+  </section>
+  
+  <section class="get_started"><div class="content_width">
+      <div class="banner">
+        <div class="content_width">
+          <h1>Get started at Granville College right now!</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="FAQ">
+    <div class="content_width">
+       <p>Frequently <span>Asked Questions</span></p>
+      <div class="blocks">
+        <div class="faq_item">
+          <button type="button" class="faq_button" >&plus; Why Granville College?</button>
+          <div class="content">
+            <p>We support our students from the moment they submit
+              their application to long after they graduate. We foster a
+              safe environment where curiosity and compassion are
+              encouraged by our experienced and dedicated staff.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button type="button" class="faq_button">&plus; How To Apply?</button>
+          <div class="content">
+            <p>It's easy! To start the application process, simply fill out the
+              form above!
+            </p>
+          </div>
+        </div>
+
+          <div class="faq_item">
+            <button type="button" class="faq_button">&plus; Where Can I Explore Program Options?</button>
+            <div class="content"> 
+              <p>Select a program from the section above or from the top
+                  navigation bar to explore options for your future.
+                </p>
+            </div>
+          </div>
+          
+        <div class="faq_item">
+          <button type="button" class="faq_button">&plus; Is Financial Aid Available?</button>
+          <div class="content"> 
+            <p>You may qualify for grants, loans, or scholarships. Our
+                educational funding specialists will guide you through the
+                available options.
+              </p>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our_campus">
+    <div class="content_width">
+      <p class="title">Our <span> Campus</span></p><br>
+      <p class="address">725-570 Dunsmuir St Vancouver BC V6B IYI, Canada</p>
+      <a href="#take_assessment" class="button">Get info Now!</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content_width">
+      <p>Privacy Policy | Terms & Conditions
+      <span class="copyright"> Copyright © 2023 Granville College</span>
+      </p>
+    </div>
+  </footer>
+  </body>
+</html>

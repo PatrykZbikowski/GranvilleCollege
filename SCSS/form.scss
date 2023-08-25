@@ -1,0 +1,216 @@
+@import "frequentColours";
+
+.form{
+    background-color: white;
+    color: $frequentGray;
+    display: block;
+    position: absolute;
+    height: 525px;
+    width: 365px;
+    bottom: 13%;
+    left: calc(50% + 7rem);
+    box-shadow: 0 0 10px $frequentBlack;
+    
+    @media (max-width: 980px) {
+       display: none; 
+    }
+
+    h3{
+        color: $frequentOrange;
+        padding-top: 20px;
+        font-size: 30px;
+        span{
+            color: $frequentGray
+        }
+    }
+
+    .form_info{
+        display: flex;
+        position: relative;
+        height: 40%;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        p{
+            font-size: small;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding-top: 10px;
+            padding-bottom: 40px;
+            li{
+                font-size: small;
+                position: relative;
+                padding: 5px 0px;
+                text-indent: 1em;
+
+                &::before{
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    background: url("/granvile-assetss/icons/bullet.png");
+                    background-size: contain;
+                    height: 10px;
+                    width: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    
+    .form_input{
+        display: block;
+        position: relative;
+        height: 60%;
+        width: 100%;
+        flex-wrap: wrap;
+        font-size: smaller;
+        padding: 0px 10px 10px 10px;
+
+        .select_box{
+            position: relative;
+            padding-bottom: 10px;
+
+            select{
+                color: $frequentGray;
+                display: flex;
+                flex-grow: 1;
+                background-color: transparent;
+                border-bottom: 0.1rem solid #cfd8dc;
+                line-height: 2rem;
+                padding: 0px 0px 5px 0px;
+                position: relative;
+                width: calc(100% - 1rem);
+                left: 2.5%;
+                appearance: none;
+            }
+            span{
+                border-left: 4px solid transparent;
+                border-color: transparent;
+                border-right: 4px solid transparent;
+                border-top: 7px solid #97a9b2;
+                display: block;
+                height: 0;
+                position: absolute;
+                right: 35px;
+                top: 15px;
+                width: 0;
+                z-index: 0; 
+            }
+            
+        }
+        .input_row{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-bottom: 10px;
+
+            .input_box{
+                width: calc(50% - 1rem);
+                position: relative;
+
+                @media (max-width: 980px) {
+                    width: 100%; 
+                 }
+
+                input{
+                    border-bottom: 0.1rem solid #cfd8dc;
+                    line-height: 2rem;
+                    width: 100%;
+                }
+
+                span{
+                    background: url("/granvile-assetss/icons/user.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    display: inline-block;
+                    height: 15px;
+                    position: absolute;
+                    right: 1.5rem;
+                    top: 0.7rem;
+                    width: 15px;
+                }
+                
+            }
+        }
+        .email_box{
+            display: flex;
+            position: relative;
+            padding: 0px 7px;
+            color: $frequentGray;
+            padding-bottom: 10px;
+
+            input{
+                border-bottom: 0.1rem solid #cfd8dc;
+                line-height: 2rem;
+                width: 100%;
+            }
+
+            span{
+                background: url("/granvile-assetss/icons/mail.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: inline-block;
+                height: 15px;
+                position: absolute;
+                right: 2rem;
+                top: 0.7rem;
+                width: 15px;
+            }
+        }
+
+        .button{
+            position: absolute;
+            display: flex;
+            background-color: $frequentOrange;
+            color: white;
+            font-weight: bold;
+            padding: 5px 52px;
+            text-align: center;
+            text-decoration: none;
+            flex-grow: 1;
+            width: 90%;     
+            cursor: pointer;
+            bottom: 20%;
+            justify-content: center;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            font-size: 20px;
+            border: 1px solid $frequentOrange;
+            transition: 0.3s;
+    
+            &:hover{
+                background-color: white;
+                color: $frequentOrange;
+                transition: 0.3s;
+            }
+        }
+
+        .form_bottom{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            text-align: center;
+            bottom: 5%;
+            width: 95%;
+            padding: 0px 10px 10px 10px;
+
+            p{
+                font-size: 10px;
+            }
+
+            a{
+                color: $frequentOrange;
+                
+            }
+            
+        }      
+    }
+}
